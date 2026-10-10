@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maths Formula Hub</title>
+
+<style>
+:root {
+  --bg: #f3f6ff;
+  --card: #ffffff;
+  --text: #182238;
+  --primary: #5b4bdb;
+  --border: #e1e6f0;
+}
+
+body.dark {
+  --bg: #111827;
+  --card: #1f2937;
+  --text: #f3f4f6;
+  --border: #374151;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, "Noto Sans Devanagari", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  transition: 0.3s;
+}
+
+header {
+  background: linear-gradient(135deg, #5145cd, #8b5cf6);
+  color: white;
+  padding: 35px 18px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0 0 10px;
+  font-size: clamp(28px, 5vw, 42px);
+}
+
+header p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.controls {
+  max-width: 1100px;
+  margin: 20px auto;
+  padding: 0 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+input, select, button {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  font-size: 15px;
+}
+
+input, select {
+  background: var(--card);
+  color: var(--text);
+}
+
+#search {
+  flex: 1;
+  min-width: 200px;
+}
+
+button {
+  cursor: pointer;
+  background: var(--primary);
+  color: white;
+  border: none;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+main {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 15px 30px;
+}
+
+.stats {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.stat {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 15px;
+  flex: 1;
+  min-width: 130px;
+}
+
+.stat strong {
+  display: block;
+  font-size: 24px;
+  color: var(--primary);
+  margin-bottom: 5px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+}
+
+.formula-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  padding: 18px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px #00000008;
+}
+
+.formula-card h3 {
+  margin-top: 0;
+}
+
+.formula {
+  background: var(--bg);
+  border-radius: 10px;
+  padding: 15px;
+  font-size: 21px;
+  text-align: center;
+  overflow-wrap: anywhere;
+  margin: 12px 0;
+}
+
+.tag {
+  display: inline-block;
+  font-size: 12px;
+  background: #e9e7ff;
+  color: #5145cd;
+  padding: 5px 9px;
+  border-radius: 20px;
+  margin: 3px 3px 3px 0;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.actions button {
+  flex: 1;
+  padding: 9px;
+}
+
+.favorite {
+  background: #e11d48;
+}
+
+footer {
+  text-align: center;
+  padding: 25px 15px;
+  opacity: 0.8;
+}
+
+.empty {
+  text-align: center;
+  padding: 35px 10px;
+  display: none;
+}
+
+@
